@@ -25,10 +25,11 @@ This analysis is especially valuable for **brand sentiment monitoring**, **custo
 - Removing duplicate tweets  
 
 ### 🔹 Text Preprocessing
-- URL and special character removal  
-- Tokenization  
-- Stopword removal  
-- Lemmatization using **NLTK**  
+- Lowercasing
+- Removing URLs, mentions (@), hashtags (#)
+- Removing non-alphabetic characters
+- Tokenization and lemmatization using ```WordNetLemmatizer```
+- Stopword removal and filtering short words (< 2 characters)
 
 ### 🔹 Exploratory Data Analysis (EDA)
 - Visualization of sentiment distribution  
@@ -91,8 +92,8 @@ cd twitter-sentiment-analysis
 ```
 
 ### 2. Install dependencies
-```bash
-pip install -r requirements.txt
+```text
+please see the requirement in the file <3
 ```
 
 ### 3. Download NLTK data
@@ -105,6 +106,7 @@ nltk.download('stopwords')
 ### 4. Run the analysis
 Open and execute ```nlp-twitter.ipynb``` in Jupyter Notebook or JupyterLab.
 
+---
 
 ## 📊 Key Insights
 ### 1. Data Distribution  
@@ -116,6 +118,7 @@ Random Forest significantly outperformed other models, suggesting that ensemble 
 ### 3.Sentiment Challenges  
 The model performs best on Negative and Neutral classifications, while Irrelevant tweets have the highest precision but lower recall.
 
+---
 ## 🔍 Future Improvements
 ### 1. Advanced Text Processing:
 - Implement word embeddings (Word2Vec, GloVe)
@@ -126,5 +129,6 @@ The model performs best on Negative and Neutral classifications, while Irrelevan
 - Ensemble methods combining multiple classifiers
 - Deep learning approaches (LSTM, CNN for text)
 
+---
 ## 📝 Note
 The project demonstrates a complete NLP pipeline from data cleaning to model deployment. The Random Forest model with TF-IDF features provides a robust baseline for sentiment classification on Twitter data.
