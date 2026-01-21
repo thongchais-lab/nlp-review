@@ -1,7 +1,7 @@
 # 🐦 Twitter Sentiment Analysis with NLP
 
 This repository contains a **Natural Language Processing (NLP)** project focused on classifying the sentiment of tweets related to various entities such as **brands, products, and games**.  
-The project walks through the **entire data science pipeline** — from raw data cleaning to high-performance machine learning classification.
+The project walks through the **entire data science pipeline**  from raw data cleaning to high-performance machine learning classification.
 
 ---
 
